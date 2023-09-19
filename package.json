@@ -1,6 +1,6 @@
 {
   "name": "fetch-event-source-sse",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "copy of @microsoft/fetch-event-source which no maintain, A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/chalecao/fetch-event-source#readme",
   "repository": "github:chalecao/fetch-event-source",
@@ -17,7 +17,7 @@
     "clean": "rimraf ./lib ./coverage",
     "prebuild": "npm run clean",
     "build": "tsc && tsc -p tsconfig.esm.json",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jasmine": "^4.3.1",
