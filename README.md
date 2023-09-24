@@ -1,4 +1,6 @@
-# Fetch Event Source
+# Fetch Event Source sse
+copy of @microsoft/fetch-event-source which no maintain, usage  as follows.
+
 This package provides a better API for making [Event Source requests](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) - also known as server-sent events - with all the features available in the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 The [default browser EventSource API](https://developer.mozilla.org/en-US/docs/Web/API/EventSource) imposes several restrictions on the type of request you're allowed to make: the [only parameters](https://developer.mozilla.org/en-US/docs/Web/API/EventSource/EventSource#Parameters) you're allowed to pass in are the `url` and `withCredentials`, so:
@@ -17,7 +19,7 @@ In addition, this library also plugs into the browser's [Page Visibility API](ht
 
 # Install
 ```sh
-npm install @microsoft/fetch-event-source
+npm install fetch-event-source-sse
 ```
 
 # Usage
@@ -29,7 +31,7 @@ sse.onmessage = (ev) => {
 };
 
 // AFTER:
-import { fetchEventSource } from '@microsoft/fetch-event-source';
+import { fetchEventSource } from 'fetch-event-source-sse';
 
 await fetchEventSource('/api/sse', {
     onmessage(ev) {
